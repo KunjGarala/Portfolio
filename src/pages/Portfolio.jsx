@@ -19,6 +19,13 @@ const projects = [
 export default function Portfolio() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-7xl">
+      <div className="mt-1 mb-5">
+        <h2 className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-black to-purple-900 text-transparent bg-clip-text flex items-center gap-4">
+          <Brain className="inline-block w-8 h-8 md:w-10 md:h-10 text-black" />
+          Problem Solving
+        </h2>
+        <LeetCodeProgress />
+      </div>
       <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-black to-purple-900 text-transparent bg-clip-text">
       <Code2 className="inline-block w-8 h-8 md:w-10 md:h-10 text-black mr-2" />
       My Projects
@@ -67,14 +74,6 @@ export default function Portfolio() {
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="mt-20">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-black to-purple-900 text-transparent bg-clip-text flex items-center gap-4">
-          <Brain className="inline-block w-8 h-8 md:w-10 md:h-10 text-black" />
-          Problem Solving
-        </h2>
-        <LeetCodeProgress />
       </div>
     </div>
   )
