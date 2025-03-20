@@ -2,8 +2,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Doughnut } from "react-chartjs-2"
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js"
-import { Loader2 } from "lucide-react"
-
+import ContentLoader from 'react-content-loader'
 ChartJS.register(ArcElement, Tooltip, Legend)
 
 export default function LeetCodeProgress() {
@@ -25,7 +24,35 @@ export default function LeetCodeProgress() {
   }, [])
 
   if (error) return <div>Failed to load LeetCode data</div>
-  if (isLoading) return <Loader2 className="w-8 h-8 animate-spin" />
+  if (isLoading) return (
+    <ContentLoader 
+      viewBox="0 0 600 250" 
+      height={250} 
+      width={600} 
+      backgroundColor="#f3f3f3"
+      foregroundColor="#ecebeb"
+    >
+      {/* Title */}
+      <rect x="20" y="20" rx="4" ry="4" width="200" height="20" /> 
+
+      {/* Donut Chart Placeholder */}
+      <circle cx="120" cy="120" r="70" />
+      <circle cx="120" cy="120" r="40" fill="#f3f3f3" />
+
+      {/* Total Problems Solved */}
+      <rect x="250" y="80" rx="4" ry="4" width="200" height="20" className="md:hidden" />
+      
+      {/* Problem Stats */}
+      <circle cx="260" cy="130" r="8" />
+      <rect x="275" y="122" rx="3" ry="3" width="100" height="12" />
+
+      <circle cx="260" cy="160" r="8" />
+      <rect x="275" y="152" rx="3" ry="3" width="100" height="12" />
+
+      <circle cx="260" cy="190" r="8" />
+      <rect x="275" y="182" rx="3" ry="3" width="100" height="12" />
+    </ContentLoader>
+  )
 
   const totalSolved = data?.totalSolved ?? 0
   const easySolved = data?.easySolved ?? 0
