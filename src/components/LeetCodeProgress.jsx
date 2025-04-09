@@ -25,33 +25,36 @@ export default function LeetCodeProgress() {
 
   if (error) return <div>Failed to load LeetCode data</div>
   if (isLoading) return (
-    <ContentLoader 
-      viewBox="0 0 600 250" 
-      height={250} 
-      width={600} 
-      backgroundColor="#f3f3f3"
-      foregroundColor="#ecebeb"
-    >
-      {/* Title */}
-      <rect x="20" y="20" rx="4" ry="4" width="200" height="20" /> 
+    <div className="w-full h-[250px] md:h-[300px] flex items-center justify-center">
+      <ContentLoader 
+        viewBox="0 0 600 250" 
+        height="100%"
+        width="100%"
+        backgroundColor="#f3f3f3"
+        foregroundColor="#ecebeb"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        {/* Title */}
+        <rect x="20" y="20" rx="4" ry="4" width="200" height="20" /> 
 
-      {/* Donut Chart Placeholder */}
-      <circle cx="120" cy="120" r="70" />
-      <circle cx="120" cy="120" r="40" fill="#f3f3f3" />
+        {/* Donut Chart Placeholder */}
+        <circle cx="120" cy="120" r="70" />
+        <circle cx="120" cy="120" r="40" fill="#f3f3f3" />
 
-      {/* Total Problems Solved */}
-      <rect x="250" y="80" rx="4" ry="4" width="200" height="20" className="md:hidden" />
-      
-      {/* Problem Stats */}
-      <circle cx="260" cy="130" r="8" />
-      <rect x="275" y="122" rx="3" ry="3" width="100" height="12" />
+        {/* Total Problems Solved */}
+        <rect x="250" y="80" rx="4" ry="4" width="200" height="20" />
+        
+        {/* Problem Stats */}
+        <circle cx="260" cy="130" r="8" />
+        <rect x="275" y="122" rx="3" ry="3" width="100" height="12" />
 
-      <circle cx="260" cy="160" r="8" />
-      <rect x="275" y="152" rx="3" ry="3" width="100" height="12" />
+        <circle cx="260" cy="160" r="8" />
+        <rect x="275" y="152" rx="3" ry="3" width="100" height="12" />
 
-      <circle cx="260" cy="190" r="8" />
-      <rect x="275" y="182" rx="3" ry="3" width="100" height="12" />
-    </ContentLoader>
+        <circle cx="260" cy="190" r="8" />
+        <rect x="275" y="182" rx="3" ry="3" width="100" height="12" />
+      </ContentLoader>
+    </div>
   )
 
   const totalSolved = data?.totalSolved ?? 0
