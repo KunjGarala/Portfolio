@@ -23,6 +23,8 @@ export default function LeetCodeProgress() {
       })
   }, [])
 
+
+  
   if (error) return <div>Failed to load LeetCode data</div>
   if (isLoading) return (
     <div className="w-full h-[250px] md:h-[300px] flex items-center justify-center">
