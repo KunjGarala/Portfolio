@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="h-[calc(90vh-64px)] container mx-auto px-4 flex items-center">
       <div className="space-y-8">
-        <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-black to-purple-900 text-transparent bg-clip-text animate-fade-in">
+        <h1 className="pb-4 text-5xl md:text-7xl font-bold bg-gradient-to-r from-black to-purple-900 text-transparent bg-clip-text animate-fade-in">
           Hi, I'm Kunj Garala
         </h1>
 
