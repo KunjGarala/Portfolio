@@ -1,10 +1,10 @@
-import src from "../assets/copyjpg.jpg";
+import src from "../assets/kunjgarala.jpg";
 import charusat from "../assets/charusat.jpeg";
 
 export default function About() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-6xl">
-      <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+      <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-black to-purple-900 text-transparent bg-clip-text">
         About Me
       </h1>
 
@@ -13,9 +13,9 @@ export default function About() {
           <img
             src={src}
             alt="Kunj Garala"
-            className="rounded-2xl max-h-96 shadow-lg hover:scale-105 transition-transform duration-300"
+            className="rounded-2xl max-h-96 shadow-lg"
           />
-          <p className="mt-4 font-sans font-semibold text-3xl md:text-4xl">
+          <p className="pb-4 mt-4 font-sans font-semibold text-3xl md:text-4xl bg-gradient-to-r from-black to-purple-900 text-transparent bg-clip-text">
             Kunj Garala
           </p>
         </div>
@@ -35,12 +35,12 @@ export default function About() {
       </div>
 
       <div className="mt-16">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
+        <h2 className="pb-4 text-2xl md:text-3xl font-bold mb-8 text-center bg-gradient-to-r from-black to-purple-900 text-transparent bg-clip-text">
           Education Journey
         </h2>
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-            <div className="bg-gradient-to-r from-pink-500 to-purple-500 h-20"></div>
+            <div className="bg-gradient-to-r from-black to-purple-900 h-20"></div>
             <div className="p-8">
               <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
                 <div className="w-28 h-28 -mt-20 relative hover:scale-105 transition-transform duration-300">
@@ -54,7 +54,7 @@ export default function About() {
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">
                     CHARUSAT University
                   </h3>
-                  <p className="text-lg font-medium text-pink-600 mb-2">
+                  <p className="text-lg font-medium text-purple-900 mb-2">
                     B.Tech in Computer Engineering
                   </p>
                   <p className="text-gray-600">2023 - 2027</p>
