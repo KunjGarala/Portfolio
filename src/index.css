@@ -2,3 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #38bdf8, #06b6d4); 
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2563eb, #22d3ee); 
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+  border-radius: 8px;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #38bdf8 #0f172a;
+}
+
