@@ -6,7 +6,7 @@ const Home = () => {
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-blue-900/20 to-black">
       <div className="container mx-auto px-4 text-center">
         <div className="space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-600 text-transparent bg-clip-text">
+          <h1 className="pb-3 text-4xl sm:text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-600 text-transparent bg-clip-text">
             Hi, I'm Kunj Garala
           </h1>
           

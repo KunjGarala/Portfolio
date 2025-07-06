@@ -51,7 +51,7 @@ const Portfolio = () => {
                 </div>
 
                 <div className="mt-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text flex items-center gap-4">
+                    <h2 className="pb-2 text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text flex items-center gap-4">
                         <Code2 className="text-blue-400" />
                         My Projects
                     </h2>
