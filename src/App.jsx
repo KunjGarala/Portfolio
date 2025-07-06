@@ -1,27 +1,21 @@
-import { Routes, Route } from "react-router-dom"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Portfolio from "./pages/Portfolio"
-import Contact from "./pages/Contact"
+import React from 'react';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-      <div className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-  )
-}
+    <div className="bg-black text-white min-h-screen">
+      <Header />
+      <Home />
+      <About />
+      <Portfolio />
+      <Footer />
+    </div>
+  );
+};
 
-export default App
-
+export default App;
