@@ -33,3 +33,47 @@ export const hackathons = [
     tags: ["React.js", "Gemini AI", "Tailwind CSS"]
   }
 ];
+
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaJava, FaGithub, FaDatabase } from "react-icons/fa";
+import { SiTailwindcss, SiC, SiCplusplus, SiJavascript, SiSpringboot, SiSpring, SiHibernate, SiMysql, SiPostman } from "react-icons/si";
+
+export const skills = [
+  {
+    category: 'Web Development',
+    items: [
+      { name: 'HTML', icon: FaHtml5 },
+      { name: 'CSS', icon: FaCss3Alt },
+      { name: 'Bootstrap', icon: FaBootstrap },
+      { name: 'Tailwind', icon: SiTailwindcss },
+      { name: 'React', icon: FaReact },
+    ],
+  },
+  {
+    category: 'Programming Languages',
+    items: [
+      { name: 'C', icon: SiC },
+      { name: 'C++', icon: SiCplusplus },
+      { name: 'Java', icon: FaJava },
+      { name: 'JavaScript', icon: SiJavascript },
+    ],
+  },
+  {
+    category: 'Frameworks & Libraries',
+    items: [
+      { name: 'Spring Boot', icon: SiSpringboot },
+      { name: 'Spring MVC', icon: SiSpring },
+      { name: 'Spring Security', icon: SiSpring },
+      { name: 'Spring Framework', icon: SiSpring },
+      { name: 'Hibernate (ORM)', icon: SiHibernate },
+    ],
+  },
+  {
+    category: 'Databases & Tools',
+    items: [
+      { name: 'MySQL', icon: SiMysql },
+      { name: 'SQL', icon: FaDatabase },
+      { name: 'GitHub', icon: FaGithub },
+      { name: 'Postman', icon: SiPostman },
+    ],
+  },
+];

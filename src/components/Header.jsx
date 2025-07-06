@@ -34,7 +34,10 @@ const Header = () => {
   return (
     <header className="fixed top-0 z-50 w-full bg-black/95 backdrop-blur-md border-b border-gray-800">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text">
+        <div
+          className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text cursor-pointer"
+          onClick={() => scrollToSection('home')}
+        >
           Kunj Garala
         </div>
         
