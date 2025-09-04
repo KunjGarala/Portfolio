@@ -12,7 +12,7 @@ const LeetCodeProgress = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://leetcode-stats-api.herokuapp.com/kunj_garala05")
+    fetch("https://leetcode-api-faisalshohag.vercel.app/kunj_garala05")
       .then((response) => response.json())
       .then((data) => {
         setData(data);
