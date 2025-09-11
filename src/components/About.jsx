@@ -23,16 +23,8 @@ const About = () => {
           <div className="max-w-2xl space-y-6 flex flex-col justify-center items-center md:items-start">
             <div className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700">
               <p className="text-lg leading-relaxed text-gray-300">
-                I'm a software developer with expertise in JavaScript and React.js. 
-                I am passionate about building engaging and user-friendly applications, 
-                as demonstrated by projects like my Spotify Clone, a web-based music player 
-                that allows users to seamlessly browse and play music.
-              </p>
-            </div>
-            <div className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700">
-              <p className="text-lg leading-relaxed text-gray-300">
-                With a strong focus on frontend development, UI/UX, and interactive web experiences, 
-                I aim to push the boundaries of web applications through continuous learning and innovation.
+                I’m Kunj Garala, a Computer Engineering student at CHARUSAT with a passion for web development, backend systems, and scalable software solutions. Skilled in React.js, Tailwind CSS, Java, Spring Boot, Spring Security, and Hibernate, I create responsive and secure applications backed by MySQL and PostgreSQL. 
+                I’ve also honed my problem-solving abilities with 400+ coding challenges on LeetCode, continually improving my technical expertise.
               </p>
             </div>
           </div>

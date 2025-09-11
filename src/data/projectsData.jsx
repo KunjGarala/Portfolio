@@ -2,20 +2,29 @@
 import Farmease from "../assets/Farmease.png";
 import Spotify from "../assets/Spotify.png";
 import hacknuthon from "../assets/hacknuthon6.0.png";
+import EduConnect from "../assets/EduConnect.png";
 import KXJ from  "../assets/KXJ.png";
 export const projects = [
-  {
+{
     id: 1,
+    title: "EduConnect",
+    description:
+      "Developed EduConnect, a collaborative learning and event management platform with an intuitive interface, seamless communication tools, and responsive design to enhance both educational and event experiences.",
+    image: EduConnect,
+    github: "https://github.com/KunjGarala/EduConnect",
+    tags: ["SpringBoot","PostgreSQL" , "React.js"],
+  },
+  {
+    id: 2,
     title: "FarmEase",
     description:
       "Built the frontend for a farmer-centric e-commerce platform, integrated APIs, and optimized performance for a smoother user experience.",
     image: Farmease,
-    link: "https://drive.google.com/drive/folders/1AAaGoQ97zfx1rsNbOew6kkPtSICp0bGI",
     github: "https://github.com/KunjGarala/FarmEase/tree/kunj-garala",
     tags: ["React.js", "Tailwind CSS"],
   },
   {
-    id: 2,
+    id: 3,
 
     title: "KXJ",
     description:
@@ -26,7 +35,7 @@ export const projects = [
     tags: ["React.js", "Redux", "Appwrite", "CRUD"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Spotify Clone",
     description:
       "Developed a Spotify clone with an intuitive UI, dynamic volume control, and a responsive design for seamless music playback.",

@@ -16,8 +16,7 @@ const Home = () => {
           </div>
           
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-            A passionate software developer specializing in JavaScript and React.js, 
-            creating engaging and user-friendly applications.
+            I am a software developer skilled in JavaScript, React.js, and Spring Boot, creating secure backend systems and user-friendly web applications.
           </p>
           
           <button

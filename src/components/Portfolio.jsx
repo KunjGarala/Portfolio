@@ -10,7 +10,6 @@ const Portfolio = () => {
             <div className="container mx-auto px-4 lg:px-12 max-w-7xl">
                 <LeetCodeProgress />
 
-                {/* Skill Section */}
                 <div className="mt-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-cyan-400 text-transparent bg-clip-text text-center flex items-center justify-center gap-4">
                         <BadgeCheck className="text-blue-400" />
